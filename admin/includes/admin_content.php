@@ -24,16 +24,27 @@
         // echo $found_user->username;
 
         // $user = new User();
-        // $user->username = "Example_username";
-        // $user->password = "Example_upassword";
-        // $user->first_name = "John";
-        // $user->last_name = "Doe";
+        // $user->username = "Example_username3";
+        // $user->password = "Example_upassword3";
+        // $user->first_name = "John3";
+        // $user->last_name = "Doe3";
 
         // $user->create();
 
-        // $user = User::find_user_by_id(104);
-        // $user->delete(); 
+        $user = User::find_user_by_id(110);
+        $user->username = "Numai4";
+        $user->password = "Egol4";
+        $user->first_name = "John4";
+        $user->last_name = "Doe4";
 
+        $user->update();
+
+        // $user = User::find_user_by_id(107);
+        // $user->delete(); 
+        
+        $user = User::find_user_by_id(106);
+        $user->username = "gica";
+        $user->save();
 
         ?>
 
