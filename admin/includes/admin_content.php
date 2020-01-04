@@ -16,13 +16,24 @@
         // $user = User::instantiation($found_user);
         // echo $user->username;
 
-        // $users = User::find_all_users();
-        // foreach($users as $user){
+         // foreach($users as $user){
         //     echo $user->last_name . "<br>";
         // }
         
         // $found_user = User::find_user_by_id(2);
         // echo $found_user->username;
+
+        // $user = new User();
+        // $user->username = "Example_username";
+        // $user->password = "Example_upassword";
+        // $user->first_name = "John";
+        // $user->last_name = "Doe";
+
+        // $user->create();
+
+        // $user = User::find_user_by_id(104);
+        // $user->delete(); 
+
 
         ?>
 
