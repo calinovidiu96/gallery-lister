@@ -42,7 +42,7 @@ class Db_object {
 
     private function has_the_attribute($the_attribute){
         $object_properties = get_object_vars($this);
-        return array_key_exists($the_attribute,$object_properties);
+        return array_key_exists($the_attribute, $object_properties);
     }
 
     public function properties() {
@@ -72,7 +72,7 @@ class Db_object {
         $properties = $this->clean_properties();
 
         $sql = "INSERT INTO " . static::$db_table . "(" . implode(",", array_keys($properties)) . ")";
-        $sql .= "VALUES ('" . implode(" ',' ", array_values($properties)) . "')";
+        $sql .= "VALUES ('" . implode("','", array_values($properties)) ."')";
 
         if($database->query($sql)){
             $this->id = $database->the_insert_id();
