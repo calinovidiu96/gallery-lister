@@ -9,8 +9,16 @@
         </h1>
         <?php
         
-        // $found_users = User::find_all_users();
-        // echo $found_user s['username'];
+        // $users = User::find_all();
+        // foreach($users as $user){
+        //     echo $user->username;
+        // }
+
+        // $photos = Photo::find_all();
+        // foreach($photos as $photo){
+        //     echo $photo->title;
+        // }
+        
 
         // $found_user = User::find_user_by_id(2);
         // $user = User::instantiation($found_user);
@@ -24,29 +32,37 @@
         // echo $found_user->username;
 
         // $user = new User();
-        // $user->username = "Example_username3";
-        // $user->password = "Example_upassword3";
-        // $user->first_name = "John3";
-        // $user->last_name = "Doe3";
+        // $user->username = "Example_username5";
+        // $user->password = "Example_upassword4";
+        // $user->first_name = "John4";
+        // $user->last_name = "Doe4";
 
-        // $user->create();
+        // $user->save();
 
-        $user = User::find_user_by_id(110);
-        $user->username = "Numai4";
-        $user->password = "Egol4";
-        $user->first_name = "John4";
-        $user->last_name = "Doe4";
+        // $user = User::find_user_by_id(110);
+        // $user->username = "Numai4";
+        // $user->password = "Egol4";
+        // $user->first_name = "John4";
+        // $user->last_name = "Doe4";
 
-        $user->update();
+        // $user->update();
 
         // $user = User::find_user_by_id(107);
         // $user->delete(); 
         
-        $user = User::find_user_by_id(106);
-        $user->username = "gica";
-        $user->save();
+        // $user = User::find_user_by_id(106);
+        // $user->username = "gica";
+        // $user->save();
 
-        ?>
+        // $photo = new Photo();
+        // $photo->title = "Cea mai poza";
+        // $photo->size = 20;
+
+        // $photo->create();
+
+        
+
+        ?> 
 
         <ol class="breadcrumb">
             <li>
