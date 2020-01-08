@@ -9,6 +9,9 @@
         </h1>
         <?php
         
+        $user = Photo::find_by_id(1);
+        echo $user->filename;
+
         // $users = User::find_all();
         // foreach($users as $user){
         //     echo $user->username;
