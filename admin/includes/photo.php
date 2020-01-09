@@ -1,17 +1,20 @@
 <?php 
 class Photo extends Db_object {
     protected static $db_table = "photos";
-    protected static $db_table_fields = array('title', 'description', 'filename', 'type', 'size');
+    protected static $db_table_fields = array('title', 'caption', 'description', 'filename', 'alternate_text', 'type', 'size');
     public $id;
     public $title;
+    public $caption;
     public $description;
     public $filename;  
+    public $alternate_text;
     public $type;  
     public $size;  
+    
 
     public $tmp_path;
     public $upload_directory = "images";
-    public $custom_errors = array(); 
+    public $errors = array(); 
     public $upload_errors = array(
         UPLOAD_ERR_OK           => "There is no error",
         UPLOAD_ERR_INI_SIZE		=> "The uploaded file exceeds the upload_max_filesize directive in php.ini",
