@@ -72,8 +72,7 @@ $user = new User();
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="create" class="btn btn-primary pull-right">
-                            </div>
-                            
+                            </div>  
                         </div>
                     </form>
                 </div>
