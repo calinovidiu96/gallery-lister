@@ -48,6 +48,17 @@ $(document).ready(function(){
 
     });
 
+    // Edit Photo side bad
+    $(".info-box-header").click(function(){
+    $(".inside").slideToggle("fast");
+
+    $("#toggle").toggleClass("glyphicon glyphicon-menu-down , glyphicon glyphicon-menu-up ");
+    });
+
+    // Delete function
+    $(".delete_link").click(function(){
+           return confirm("Are you sure you want to delete this item?");
+        });
 
     tinymce.init({selector:'textarea'});
 });
